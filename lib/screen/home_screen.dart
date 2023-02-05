@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:ticket_booking_app/screen/hotel_screen.dart';
 import 'package:ticket_booking_app/screen/ticket_view.dart';
 import 'package:ticket_booking_app/utill/app_info_list.dart';
+import 'package:ticket_booking_app/utill/app_layout.dart';
 import 'package:ticket_booking_app/utill/app_style.dart';
 import 'package:gap/gap.dart';
+import 'package:ticket_booking_app/widgets/double_text_widget.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -40,8 +42,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                     Container(
-                      width: 50,
-                      height: 50,
+                      width: AppLayout.getWidth(50),
+                      height: AppLayout.getHeight(50),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           image: const DecorationImage(
@@ -99,18 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const Gap(25),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Hotels", style: Styles.headLineStyle1,),
-                InkWell(
-                  onTap: () {
-                    print("you are tapped");
-                  }, child: Text("View all",
-                  style: Styles.headLineStyle3,),
-                )
-              ],
-            ),
+            child: AppDoubleTextWidget(bigText: "Hotels", smallText: "View all"),
           ),
           const Gap(15),
           // SingleChildScrollView(

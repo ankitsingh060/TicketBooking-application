@@ -35,7 +35,10 @@ List<Map<String,dynamic>> ticketList = [
       'code' : "LDN",
       'name' : "London",
       'time'  : '8H 30M'
-    }
+    },
+    'departure_time':"08:00 AM",
+    'date':"1 MAY",
+    'number':23
   },
   {
     'from' : {
@@ -46,7 +49,10 @@ List<Map<String,dynamic>> ticketList = [
       'code' : "DEL",
       'name' : "Delhi",
       'time'  : '5H 30M'
-    }
+    },
+    'departure_time':"09:30 AM",
+    'date':"10 APR",
+    'number':24
   },
   {
     'from' : {
@@ -58,7 +64,10 @@ List<Map<String,dynamic>> ticketList = [
       'code' : "RNKP",
       'name' : "Rani KamlaPati",
       'time'  : '8H '
-    }
+    },
+    'departure_time':"10:00 AM",
+    'date':"10 DEC",
+    'number':14
   },
   {
     'from' : {
@@ -69,7 +78,10 @@ List<Map<String,dynamic>> ticketList = [
       'code' : "UDN",
       'name' : "Udhna",
       'time'  : '6H 30M'
-    }
+    },
+    'departure_time':"12:00 PM",
+    'date':"10 MAY",
+    'number':13
   }
 ];
 
