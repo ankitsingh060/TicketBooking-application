@@ -24,7 +24,7 @@ class TicketScreen extends StatelessWidget {
           ListView(
             padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20), vertical: AppLayout.getWidth(20)),
             children: [
-              Gap(AppLayout.getHeight(40)),
+              Gap(AppLayout.getHeight(60)),
               Text("Tickets", style: Styles.headLineStyle1,),
               Gap(AppLayout.getHeight(20)),
               TicketTabWidget(firstTicket: "Upcoming",secondTicket: "Previous",),
